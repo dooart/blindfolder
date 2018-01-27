@@ -2,11 +2,16 @@ body:not(.blindfolder-disabled) .u-photo {
   background-image: url('chrome-extension://__MSG_@@extension_id__/images/catsu.jpg');
 }
 
-body:not(.blindfolder-disabled) .u-photo img.avatar {
+body:not(.blindfolder-disabled) .u-photo img.avatar,
+.commit-author-section img,
+.avatar-parent-child img {
   visibility: hidden;
 }
 
 body:not(.blindfolder-disabled) .vcard-names,
-body:not(.blindfolder-disabled) li[itemprop='homeLocation'] .p-label {
+body:not(.blindfolder-disabled) li[itemprop='homeLocation'] .p-label,
+.repohead .author,
+.commit-author-section,
+.user-profile-bio {
   font-family: "Redacted Script Light";
 }
