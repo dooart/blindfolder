@@ -1,0 +1,46 @@
+{
+  "name": "Blindfolder",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Hide job candidate personal info on Hundred5, Github, LinkedIn.",
+  "homepage_url": "https://github.com/dooart/blindfolder",
+  "icons": {
+    "19": "icons/disabled-19.png",
+    "38": "icons/disabled-38.png",
+    "128": "icons/disabled-128.png"
+  },
+  "default_locale": "en",
+  "browser_action": {
+    "default_icon": "icons/disabled-38.png",
+    "default_title": "Blindfolder"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": [ "background.js" ]
+  },
+  "permissions": [
+    "storage",
+    "*://*.hundred5.com/*",
+    "*://*.linkedin.com/*",
+    "*://*.github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "*://*.hundred5.com/*" ],
+      "css": [ "src/inject/common.css", "src/inject/hundred5.css" ],
+      "js": [ "src/inject/common.js", "src/inject/hundred5.js" ]
+    }, {
+      "matches": [ "*://*.linkedin.com/*" ],
+      "css": [ "src/inject/common.css", "src/inject/linkedin.css" ],
+      "js": [ "src/inject/common.js", "src/inject/linkedin.js" ]
+    }, {
+      "matches": [ "*://*.github.com/*" ],
+      "css": [ "src/inject/common.css", "src/inject/github.css" ],
+      "js": [ "src/inject/common.js", "src/inject/github.js" ]
+    }
+  ],
+  "web_accessible_resources": [
+    "images/*",
+    "fonts/*"
+  ]
+}

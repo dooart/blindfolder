@@ -1,0 +1,6 @@
+body:not(.blindfolder-disabled) .report-page-candidate__name,
+body:not(.blindfolder-disabled) .report-page-candidate__contact,
+body:not(.blindfolder-disabled) .admin-content-title__content,
+body:not(.blindfolder-disabled) .admin-page__content .full-input-label__input input {
+  font-family: "Redacted Script Light" !important;
+}

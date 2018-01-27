@@ -1,0 +1,12 @@
+body:not(.blindfolder-disabled) .u-photo {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/catsu.jpg');
+}
+
+body:not(.blindfolder-disabled) .u-photo img.avatar {
+  visibility: hidden;
+}
+
+body:not(.blindfolder-disabled) .vcard-names,
+body:not(.blindfolder-disabled) li[itemprop='homeLocation'] .p-label {
+  font-family: "Redacted Script Light";
+}

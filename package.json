@@ -1,0 +1,16 @@
+{
+  "name": "blindfolder",
+  "version": "1.0.0",
+  "description": "Hide job candidate personal info on Hundred5, Github, LinkedIn.",
+  "repository": "github.com/dooart/blindfolder",
+  "author": "Thiago Duarte",
+  "license": "MIT",
+  "scripts": {
+    "lint": "node node_modules/standard/bin/cmd.js",
+    "lint-fix": "node node_modules/standard/bin/cmd.js --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
