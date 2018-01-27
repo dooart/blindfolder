@@ -2,7 +2,7 @@
   "name": "Blindfolder",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Hide job candidate personal info on Hundred5, Github, LinkedIn.",
+  "description": "A browser extension to hide job candidates personal info on Hundred5, Github, LinkedIn.",
   "homepage_url": "https://github.com/dooart/blindfolder",
   "icons": {
     "19": "icons/disabled-19.png",
