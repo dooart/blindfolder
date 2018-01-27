@@ -4,14 +4,17 @@ body:not(.blindfolder-disabled) .u-photo {
 
 body:not(.blindfolder-disabled) .u-photo img.avatar,
 .commit-author-section img,
-.avatar-parent-child img {
+.avatar-parent-child img,
+.user-profile-mini-avatar img {
   visibility: hidden;
 }
 
 body:not(.blindfolder-disabled) .vcard-names,
 body:not(.blindfolder-disabled) li[itemprop='homeLocation'] .p-label,
 .repohead .author,
-.commit-author-section,
-.user-profile-bio {
+.commit-author-section a,
+.user-profile-bio,
+.vcard-details,
+.user-profile-sticky-bar strong {
   font-family: "Redacted Script Light";
 }
