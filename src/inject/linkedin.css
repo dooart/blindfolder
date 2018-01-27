@@ -1,21 +1,33 @@
-body:not(.blindfolder-disabled) .presence-entity__image {
-  background-image: url('chrome-extension://__MSG_@@extension_id__/images/catsu.jpg') !important;
-}
-
-body:not(.blindfolder-disabled) .pv-top-card-section__name,
-body:not(.blindfolder-disabled) .pv-top-card-section__school,
-body:not(.blindfolder-disabled) .pv-top-card-section__location,
-body:not(.blindfolder-disabled) .pv-entity__secondary-title,
-body:not(.blindfolder-disabled) .pv-entity__location,
-body:not(.blindfolder-disabled) .pv-contact-info__card-sub-heading {
-  font-family: "Redacted Script Light" !important;
-}
-
-body:not(.blindfolder-disabled) .pv-entity__logo-img {
+/* loading */
+.presence-entity__image,
+.pv-top-card-section__name {
   visibility: hidden;
 }
 
-body:not(.blindfolder-disabled) .pv-highlight-section,
-body:not(.blindfolder-disabled) .pv-recent-activity-section {
+/* loaded */
+body.blindfolder-loaded .presence-entity__image,
+body.blindfolder-loaded .pv-top-card-section__name {
+  visibility: initial;
+}
+
+body.blindfolder-enabled .presence-entity__image {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/catsu.jpg') !important;
+}
+
+body.blindfolder-enabled .pv-top-card-section__name,
+body.blindfolder-enabled .pv-top-card-section__school,
+body.blindfolder-enabled .pv-top-card-section__location,
+body.blindfolder-enabled .pv-entity__secondary-title,
+body.blindfolder-enabled .pv-entity__location,
+body.blindfolder-enabled .pv-contact-info__card-sub-heading {
+  font-family: "Redacted Script Light" !important;
+}
+
+body.blindfolder-enabled .pv-entity__logo-img {
+  visibility: hidden;
+}
+
+body.blindfolder-enabled .pv-highlight-section,
+body.blindfolder-enabled .pv-recent-activity-section {
   display: none !important;
 }

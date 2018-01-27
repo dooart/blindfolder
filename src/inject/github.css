@@ -1,20 +1,33 @@
-body:not(.blindfolder-disabled) .u-photo {
-  background-image: url('chrome-extension://__MSG_@@extension_id__/images/catsu.jpg');
-}
-
-body:not(.blindfolder-disabled) .u-photo img.avatar,
-body:not(.blindfolder-disabled) .commit-author-section img,
-body:not(.blindfolder-disabled) .avatar-parent-child img,
-body:not(.blindfolder-disabled) .user-profile-mini-avatar img {
+/* loading */
+.u-photo img.avatar,
+.vcard-names {
   visibility: hidden;
 }
 
-body:not(.blindfolder-disabled) .vcard-names,
-body:not(.blindfolder-disabled) li[itemprop='homeLocation'] .p-label,
-body:not(.blindfolder-disabled) .repohead .author,
-body:not(.blindfolder-disabled) .commit-author-section a,
-body:not(.blindfolder-disabled) .user-profile-bio,
-body:not(.blindfolder-disabled) .vcard-details,
-body:not(.blindfolder-disabled) .user-profile-sticky-bar strong {
+/* loaded */
+body.blindfolder-loaded .u-photo img.avatar,
+body.blindfolder-loaded .vcard-names {
+  visibility: initial;
+}
+
+/* enabled */
+body.blindfolder-enabled .u-photo {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/catsu.jpg');
+}
+
+body.blindfolder-enabled .u-photo img.avatar,
+body.blindfolder-enabled .commit-author-section img,
+body.blindfolder-enabled .avatar-parent-child img,
+body.blindfolder-enabled .user-profile-mini-avatar img {
+  visibility: hidden;
+}
+
+body.blindfolder-enabled .vcard-names,
+body.blindfolder-enabled li[itemprop='homeLocation'] .p-label,
+body.blindfolder-enabled .repohead .author,
+body.blindfolder-enabled .commit-author-section a,
+body.blindfolder-enabled .user-profile-bio,
+body.blindfolder-enabled .vcard-details,
+body.blindfolder-enabled .user-profile-sticky-bar strong {
   font-family: "Redacted Script Light";
 }

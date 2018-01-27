@@ -1,11 +1,11 @@
-body:not(.blindfolder-disabled) .report-page-candidate__name,
-body:not(.blindfolder-disabled) .report-page-candidate__contact,
-body:not(.blindfolder-disabled) .admin-content-title__content,
-body:not(.blindfolder-disabled) .admin-page__content .full-input-label__input input,
-body:not(.blindfolder-disabled) .pipeline-candidate__name {
+body.blindfolder-enabled .report-page-candidate__name,
+body.blindfolder-enabled .report-page-candidate__contact,
+body.blindfolder-enabled .admin-content-title__content,
+body.blindfolder-enabled .admin-page__content .full-input-label__input input,
+body.blindfolder-enabled .pipeline-candidate__name {
   font-family: "Redacted Script Light" !important;
 }
 
-body:not(.blindfolder-disabled) .report-page-candidate__service-link {
+body.blindfolder-enabled .report-page-candidate__service-link {
   font-family: "Liberation Sans", sans-serif !important;
 }

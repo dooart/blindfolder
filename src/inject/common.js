@@ -3,6 +3,8 @@
 var originalHtmlTitle = null
 var originalUrl = null
 
+document.body.classList.add('blindfolder-loading')
+
 chrome.extension.sendMessage({}, function (response) {
   var readyStateCheckInterval = setInterval(function () {
     if (document.readyState === 'complete') {
@@ -13,6 +15,8 @@ chrome.extension.sendMessage({}, function (response) {
 
       chrome.storage.sync.get('blindfolderEnabled', function (values) {
         updateEnabled(values.blindfolderEnabled)
+        document.body.classList.remove('blindfolder-loading')
+        document.body.classList.add('blindfolder-loaded')
       })
     }
   }, 10)
@@ -40,8 +44,8 @@ chrome.runtime.onMessage.addListener(function (request) {
 })
 
 function updateEnabled (enabled) {
-  var className = 'blindfolder-disabled'
-  var operation = enabled ? 'remove' : 'add'
+  var className = 'blindfolder-enabled'
+  var operation = enabled ? 'add' : 'remove'
   document.body.classList[operation](className)
 
   chrome.runtime.sendMessage({
