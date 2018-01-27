@@ -4,3 +4,7 @@ body:not(.blindfolder-disabled) .admin-content-title__content,
 body:not(.blindfolder-disabled) .admin-page__content .full-input-label__input input {
   font-family: "Redacted Script Light" !important;
 }
+
+.report-page-candidate__service-link {
+  font-family: "Liberation Sans", sans-serif !important;
+}
