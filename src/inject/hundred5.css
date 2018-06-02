@@ -1,11 +1,5 @@
-body.blindfolder-enabled .report-page-candidate__name,
-body.blindfolder-enabled .report-page-candidate__contact,
-body.blindfolder-enabled .admin-content-title__content,
-body.blindfolder-enabled .admin-page__content .full-input-label__input input,
-body.blindfolder-enabled .pipeline-candidate__name {
+body.blindfolder-enabled .candidate-info__name,
+body.blindfolder-enabled .candidate-info__email,
+body.blindfolder-enabled .candidate-modal__content input[type="text"] {
   font-family: "Redacted Script Light" !important;
-}
-
-body.blindfolder-enabled .report-page-candidate__service-link {
-  font-family: "Liberation Sans", sans-serif !important;
 }
