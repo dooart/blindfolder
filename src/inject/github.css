@@ -18,8 +18,9 @@ body.blindfolder-enabled .u-photo {
 body.blindfolder-enabled .u-photo img.avatar,
 body.blindfolder-enabled .commit-author-section img,
 body.blindfolder-enabled .avatar-parent-child img,
-body.blindfolder-enabled .user-profile-mini-avatar img {
-  visibility: hidden;
+body.blindfolder-enabled .user-profile-mini-avatar img,
+body.blindfolder-enabled .commit-tease .avatar img {
+  content: url('chrome-extension://__MSG_@@extension_id__/images/catsu.jpg');
 }
 
 body.blindfolder-enabled .vcard-names,
@@ -28,6 +29,7 @@ body.blindfolder-enabled .repohead .author,
 body.blindfolder-enabled .commit-author-section a,
 body.blindfolder-enabled .user-profile-bio,
 body.blindfolder-enabled .vcard-details,
-body.blindfolder-enabled .user-profile-sticky-bar strong {
+body.blindfolder-enabled .user-profile-sticky-bar strong,
+body.blindfolder-enabled .commit-tease .commit-author {
   font-family: "Redacted Script Light";
 }
